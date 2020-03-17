@@ -19,108 +19,112 @@ if(isset($_SESSION['un']))
 ?>
 
 
-<!doctype html>
-<html lang="en">
-  <head>
-      <style>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-.pb
-{
-	border:1px solid gray;
-	padding:6px;
-	border-radius:5px;
-	margin-bottom:10px;
-	text-decoration: none;
-	max-width:1000px;
-	text-align: center;
-	background-color: #449D44;
-	color:white;
-	box-shadow: 2px 2px 2px 2px gray;
-    font-style: bold;
-    
+	<title>Final Year Project</title>
+</head>
+<body>
+<!-- added javascript ideone widget -->
+	<!-- <script>SEC_HTTPS = false;
+		SEC_BASE = "<customized_link>"; 
+		(function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+		  js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+		  fjs.parentNode.insertBefore(js, fjs);   
+		}(document, "script", "sphere-engine-compilers-jssdk"));
+	</script> -->
+	<script src="Page on ideone.com" type="text/javascript" ></script>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">VCET</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li><li class="nav-item ">
+			        <a class="nav-link" href="#">Contest <span class="sr-only">(current)</span></a>
+			      </li>
+			  </ul><ul class="navbar-nav ">
+			      <li class="nav-item ">
+			        <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+			      </li><li class="nav-item ">
+			        <a class="nav-link" href="#">Signup <span class="sr-only">(current)</span></a>
+			      </li>
+			  </ul>
 
+			</div>
+	</nav>
+<!-- jumbotron -->
+	<div class="container">
+		<div class="jumbotron">
+					  <h1 class="display-4">Welcome Vecetians</h1>
+					  <p class="lead">Here we have a develobed a Website to buid and improve your coding skiils</p>
+					  <hr class="my-4">
+					  <p>So lets get started together to explore the world</p>
+					  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</div>
+<!-- Added Card -->
+		<div class="card" style="width: 18rem;">
+		    <img class="card-img-top" src="images\Started.png" alt="Lets Get Started">
+			<div class="card-body">
+			    <h5 class="card-title">Lets Get Started</h5>
+			    <p class="card-text">Welcome here and now its time to test your skills so click below to test yorself.</p>
+			    <a href="compiler.php" class="btn btn-primary">Click Here</a>
+	  		</div>
+		</div>
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
 
-}
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
 
-          </style>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Grid row -->
+    <div class="row">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta charset="utf-8">
-        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
-    <meta name="description" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
 
-        
-         <!-- <link rel="stylesheet" href="css/style.css"> -->
-     <!-- <link rel="stylesheet" href="css/vlab.css">  -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Vcet Coding Website</h5>
+        <p>Welcome to our Coding website and plz enjoy yourself we have a Dipak chutiya in our class.</p>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <?php
-    require_once('header.php');
-    ?>
-    <br><br>
-<div class="row cspace2 slideanim">
-<div class="col-sm-7"> 
+      </div>
+      <!-- Grid column -->
 
-<div id="services" class="container-fluid text-center" >
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-6">
-      <a href="compiler.php"><span class="fa fa-code logo-small"></span>
-      <h4>Compiler</h4>
-      <p>Our Virtual Lab Supports C/C++ And Java Compiler</p>
-      </a>
+      <hr class="clearfix w-100 d-md-none pb-3">
+
     </div>
-    <div class="col-sm-6">
-       <a href="archive.php"><span class="fa fa-archive logo-small"></span>
-      <h4>Lab Practice</h4>
-      <p>Our Virtual Lab Provides Practice Problems Of CSE Labs</p>
-      </a>
-    </div>
-    </div>
-    <br><br><br><br>
-  <div class="row slideanim">
-    <div class="col-sm-6">
-       <a href="listcontest.php"><span class="fa fa-cogs logo-small"></span>
-      <h4>Contest</h4>
-      <p>Our Virtual Lab Judges Codes And Gives Perfect Result</p>
-      </a>
-    </div>
-    <div class="col-sm-6">
-       <a href="profile.php?user=<?php echo"$username" ?>"><span class="fa fa-check-square logo-small"></span>
-      <h4>Profile</h4>
-      <p>User can manage profile </p>
-      </a>
-    </div>
+    <!-- Grid row -->
+
   </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+		
+	</div>
 
 
 
 
-</div>
-</div><br><br><br>
-
-<div class="col-sm-5">
-    <div style="margin-left:30px" class="pb">Recent And Upcoming Labs</div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
